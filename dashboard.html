@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f6f8;
+            margin: 0;
+        }
+
+        .navbar {
+            background: #1e1e2f;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .layout {
+            display: flex;
+        }
+
+        .sidebar {
+            width: 220px;
+            background: #2b2b3c;
+            color: white;
+            height: 100vh;
+            padding: 20px;
+        }
+
+        .sidebar button {
+            width: 100%;
+            margin-bottom: 10px;
+            background: #444;
+        }
+
+        .content {
+            flex: 1;
+            padding: 30px;
+        }
+
+        .box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="navbar">
+    <h3 id="welcomeText"></h3>
+    <button onclick="logout()">Logout</button>
+</div>
+
+<div class="layout">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <button onclick="showProfile()">Profile</button>
+        <button onclick="showActivity()">Activity</button>
+        <button onclick="showUsers()" class="admin-only">User Management</button>
+        <button onclick="showSettings()">Settings</button>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="content">
+        <div id="mainContent" class="box">
+            <h2>Dashboard</h2>
+            <p>Select an option from the menu.</p>
+        </div>
+    </div>
+
+</div>
+
+<script src="dashboard.js"></script>
+</body>
+</html>

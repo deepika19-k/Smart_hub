@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>User Login</h1>
+    <p>Secure Access Portal</p>
+</header>
+
+<div class="container">
+    <div class="card">
+        <h2>Login</h2>
+
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+
+        <!-- ROLE ADDED (VERY IMPORTANT) -->
+        <select id="role">
+            <option value="">Select Role</option>
+            <option value="student">Student</option>
+            <option value="admin">Admin</option>
+        </select>
+
+        <p class="error" id="errorMsg"></p>
+
+        <button onclick="loginUser()">Login</button>
+
+        <p style="font-size:0.85rem;margin-top:10px;">
+            New user? <a href="signup.html">Create account</a>
+        </p>
+    </div>
+</div>
+
+<footer>Academic Demo Login System</footer>
+
+<!-- JS FILE MUST BE AT THE END -->
+<script src="auth.js"></script>
+
+</body>
+</html>
