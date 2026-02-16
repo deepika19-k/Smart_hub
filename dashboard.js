@@ -20,7 +20,7 @@ function showProfile() {
     document.getElementById("mainContent").innerHTML = `
         <h2>Profile</h2>
         <p><b>Username:</b> ${username}</p>
-        <p><b>Role:</b> ${role}</p>
+        <p><b>Enter Role:</b> ${role}</p>
         <p><b>Status:</b> Active</p>
     `;
 }
