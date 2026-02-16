@@ -34,6 +34,7 @@ function showActivity() {
             <li>Viewed dashboard</li>
             <li>Session active</li>
         </ul>
+        <p> Hello</p>
     `;
 }
 
@@ -78,4 +79,5 @@ function showSettings() {
 function logout() {
     localStorage.clear();
     window.location.href = "login.html";
+
 }
