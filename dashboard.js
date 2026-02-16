@@ -7,7 +7,7 @@ const username = localStorage.getItem("username");
 const role = localStorage.getItem("role");
 
 document.getElementById("welcomeText").innerText =
-    `Welcome, ${username} (${role})`;
+    `Welcome!, ${username} (${role})`;
 
 // Hide admin menu
 if (role !== "admin") {
