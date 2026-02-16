@@ -10,7 +10,7 @@ document.getElementById("welcomeText").innerText =
     `Welcome, ${username} (${role})`;
 
 // Hide admin menu
-if (role !== "admin1") {
+if (role !== "admin") {
     document.querySelectorAll(".admin-only")
         .forEach(el => el.style.display = "none");
 }
@@ -81,4 +81,5 @@ function logout() {
     window.location.href = "login.html";
 
 }
+
 
